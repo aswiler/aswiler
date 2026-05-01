@@ -16,7 +16,7 @@
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 4.8h | 7.4h | 50.9h | 67.2h |
 | AI worker hours | 0.0h | 0.0h | 0.0h | 0.0h |
-| AI concurrency hours | 9.8h | 13.2h | 85.9h | 109.2h |
+| AI concurrency hours | 9.8h | 13.2h | 86.0h | 109.2h |
 | Interactive sessions | 8 | 10 | 96 | 131 |
 | Worker sessions | 0 | 0 | 0 | 0 |
 
