@@ -14,10 +14,10 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 9.3h | 24.7h | 24.7h | 24.7h |
+| User AI session hours | 9.4h | 25.9h | 25.9h | 25.9h |
 | AI worker hours | 0.0h | 0.3h | 0.3h | 0.3h |
-| AI concurrency hours | 17.8h | 49.7h | 49.7h | 49.7h |
-| Interactive sessions | 12 | 22 | 22 | 22 |
+| AI concurrency hours | 17.4h | 52.0h | 52.0h | 52.0h |
+| Interactive sessions | 11 | 23 | 23 | 23 |
 | Worker sessions | 0 | 3 | 3 | 3 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
@@ -46,15 +46,15 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-7 | 5,511 | 7K | 4.5M | 699.0M | $1,390.09 | $9,437.54 | $0.00 |
+| claude-opus-4-7 | 5,712 | 7K | 4.6M | 720.5M | $1,431.95 | $9,727.73 | $0.00 |
 | gpt-5.5 | 84 | 286K | 13K | 4.5M | $2.43 | $12.37 | $9.74 |
-| **Total** | **5,595** | **294K** | **4.5M** | **703.6M** | **$1,392.52** | **$9,449.91** | **$9.74** |
+| **Total** | **5,796** | **294K** | **4.6M** | **725.1M** | **$1,434.38** | **$9,740.10** | **$9.74** |
 
-_748.0M total tokens processed. 94.1% cache hit rate._
+_771.3M total tokens processed. 94% cache hit rate._
 
-_$9,459.65 total saved ($9,449.91 caching + $9.74 model routing vs all-Opus)._
+_$9,749.84 total saved ($9,740.10 caching + $9.74 model routing vs all-Opus)._
 
-_Model savings are modest because ~94.1% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~94% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
 
 ## Projects
@@ -68,5 +68,5 @@ _Model savings are modest because ~94.1% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-12 05:31 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-12 06:31 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
