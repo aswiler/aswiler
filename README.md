@@ -14,10 +14,10 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 1.5h | 32.4h | 107.1h | 107.1h |
+| User AI session hours | 1.5h | 31.2h | 107.1h | 107.1h |
 | AI worker hours | 0.0h | 0.0h | 0.3h | 0.3h |
-| AI concurrency hours | 2.0h | 54.9h | 195.5h | 195.5h |
-| Interactive sessions | 2 | 27 | 81 | 81 |
+| AI concurrency hours | 2.0h | 52.8h | 195.5h | 195.5h |
+| Interactive sessions | 2 | 25 | 81 | 81 |
 | Worker sessions | 0 | 0 | 3 | 3 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
@@ -28,15 +28,15 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-7 | 5,715 | 8K | 4.9M | 701.4M | $2,363.74 | $9,468.92 | $0.00 |
+| claude-opus-4-7 | 5,612 | 8K | 4.8M | 685.3M | $2,317.05 | $9,252.90 | $0.00 |
 | claude-opus-4-8 | 2,216 | 4K | 1.8M | 369.9M | $1,169.84 | $4,994.23 | $0.00 |
 | gpt-5.5 | 4,617 | 39.4M | 1.4M | 583.7M | $270.19 | $1,576.11 | $1,262.26 |
 | claude-sonnet-4-6 | 94 | 102 | 87K | 11.9M | $6.52 | $32.39 | $19.67 |
-| **Total** | **12,642** | **39.4M** | **8.3M** | **1,667.0M** | **$3,810.29** | **$16,071.65** | **$1,281.93** |
+| **Total** | **12,539** | **39.4M** | **8.2M** | **1,651.0M** | **$3,763.60** | **$15,855.63** | **$1,281.93** |
 
-_1,790.9M total tokens processed. 93.1% cache hit rate._
+_1,773.9M total tokens processed. 93.1% cache hit rate._
 
-_$17,353.58 total saved ($16,071.65 caching + $1,281.93 model routing vs all-Opus)._
+_$17,137.56 total saved ($15,855.63 caching + $1,281.93 model routing vs all-Opus)._
 
 _Model savings are modest because ~93.1% of tokens are cache reads, where price differences between models are small._
 
@@ -75,5 +75,5 @@ _Model savings are modest because ~93.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-06-04 09:37 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-06-04 10:37 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
