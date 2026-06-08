@@ -14,9 +14,9 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 0.0h | 7.7h | 93.8h | 108.2h |
+| User AI session hours | 0.0h | 7.7h | 93.7h | 108.2h |
 | AI worker hours | 0.0h | 0.0h | 0.0h | 0.3h |
-| AI concurrency hours | 0.0h | 12.7h | 170.7h | 197.4h |
+| AI concurrency hours | 0.0h | 12.7h | 169.0h | 197.4h |
 | Interactive sessions | 0 | 9 | 73 | 82 |
 | Worker sessions | 0 | 0 | 0 | 3 |
 
@@ -29,16 +29,16 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-8 | 2,477 | 4K | 1.9M | 411.7M | $1,275.23 | $5,558.09 | $0.00 |
-| claude-opus-4-7 | 2,811 | 4K | 2.6M | 327.7M | $1,209.91 | $4,424.22 | $0.00 |
+| claude-opus-4-7 | 2,540 | 3K | 2.4M | 290.4M | $1,115.38 | $3,921.44 | $0.00 |
 | gpt-5.5 | 4,534 | 39.1M | 1.4M | 579.1M | $268.06 | $1,563.73 | $1,252.52 |
 | claude-sonnet-4-6 | 94 | 102 | 87K | 11.9M | $6.52 | $32.39 | $19.67 |
-| **Total** | **9,916** | **39.2M** | **6.1M** | **1,330.5M** | **$2,759.72** | **$11,578.44** | **$1,272.19** |
+| **Total** | **9,645** | **39.2M** | **5.9M** | **1,293.3M** | **$2,665.19** | **$11,075.65** | **$1,272.19** |
 
-_1,431.2M total tokens processed. 93% cache hit rate._
+_1,392.5M total tokens processed. 92.9% cache hit rate._
 
-_$12,850.63 total saved ($11,578.44 caching + $1,272.19 model routing vs all-Opus)._
+_$12,347.84 total saved ($11,075.65 caching + $1,272.19 model routing vs all-Opus)._
 
-_Model savings are modest because ~93% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~92.9% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
@@ -75,5 +75,5 @@ _Model savings are modest because ~93.7% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-06-08 07:13 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-06-08 08:13 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
