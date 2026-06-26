@@ -24,7 +24,7 @@ _Screen time from macOS display events, snapshotted daily. *365-day extrapolated
 
 _User AI session hours are attended interactive time measured from gaps between AI responses and the next user message; AI concurrency hours include attended time, AI generation, and background workers._
 
-_AI session 365-day totals cover 49 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 51 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
@@ -77,5 +77,5 @@ _Model savings are modest because ~93.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-06-26 10:57 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-06-26 12:33 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
