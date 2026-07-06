@@ -18,13 +18,13 @@
 | AI worker hours | 0.0h | 0.1h | 2.8h | 51.9h |
 | AI concurrency hours | 0.0h | 8.8h | 63.6h | 309.7h |
 | Interactive sessions | 0 | 8 | 44 | 123 |
-| Worker sessions | 0 | 4 | 48 | 3 |
+| Worker sessions | 0 | 3 | 48 | 3 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
 _User AI session hours are attended interactive time measured from gaps between AI responses and the next user message; AI concurrency hours include attended time, AI generation, and background workers._
 
-_AI session 365-day totals cover 59 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 61 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
@@ -76,5 +76,5 @@ _Model savings are modest because ~93.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-05 08:18 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-06 14:04 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
