@@ -13,68 +13,65 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 5.6h | 50.9h | 96h | /Users/andrew2336h* |
-| Interactive human attention | 2.0h | 19.5h | 60.3h | 138.4h |
-| Interactive AI generation | 7.4h | 61.8h | 121.8h | 223.3h |
-| Worker-classified human attention | 0.0h | 0.0h | 0.0h | 0.0h |
-| Worker/headless AI generation | 1.6h | 7.5h | 24.3h | 96.5h |
-| Additive observed work | 11.1h | 88.8h | 206.4h | 458.2h |
-| Interactive sessions | 14 | 48 | 102 | 213 |
-| Worker sessions | 41 | 104 | 300 | 639 |
+| Screen time (Mac) | 6.3h | 92.4h | 92.4h | ~2336h* |
+| Interactive human attention | 4.2h | 41.2h | 60.6h | 237.3h |
+| Interactive AI generation | 22.1h | 169.9h | 399.1h | 707.5h |
+| Worker-classified human attention | 0.2h | 2.3h | 2.3h | 2.3h |
+| Worker/headless AI generation | 2.8h | 18.3h | 114.6h | 1242.0h |
+| Additive observed work | 29.2h | 231.3h | 576.1h | 2,188.7h |
+| Interactive sessions | 22 | 94 | 125 | 324 |
+| Worker sessions | 91 | 431 | 565 | 2,187 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
+_Screen time from macos-pmset-display-assertions; collection status: ok, stale. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
 _Human attention is unioned wall-clock time, so overlapping sessions are not double-counted. AI generation is additive machine work across sessions; it is not wall-clock concurrency._
 
-_AI session 365-day totals cover 122 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 185 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
-| Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
+| Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-sol | 14,507 | 128.0M | 3.8M | 1,749.3M | $1,681.97 | $4,723.37 | $3,866.20 |
-| gpt-5.5 | 5,012 | 43.1M | 1.4M | 517.5M | $264.50 | $1,397.37 | $1,228.66 |
-| grok-4.5 | 237 | 3.9M | 121K | 40.8M | $26.09 | $110.35 | $103.39 |
-| gpt-5.6-luna | 653 | 4.2M | 133K | 79.1M | $13.34 | $213.70 | $154.08 |
-| gpt-5.6-terra | 63 | 1.1M | 14K | 3.8M | $4.29 | $10.40 | $19.70 |
-| gpt-5.3-codex-spark | 27 | 118K | 2K | 849K | $1.06 | $1.59 | $2.38 |
-| **Total** | **20,499** | **180.6M** | **5.6M** | **2,391.6M** | **$1,991.25** | **$6,456.79** | **$5,374.40** |
+| gpt-5.6-sol | 35,266 | 138.9M | 6.6M | 4,723.6M | 97.1% | 196 | 403.6h |
+| gpt-5.6-terra | 3,907 | 35.7M | 1.0M | 249.5M | 87.5% | 326 | 51.4h |
+| gpt-5.6-luna | 2,918 | 31.3M | 879K | 311.5M | 90.8% | 161 | 95.0h |
+| gpt-6-astra | 452 | 1.6M | 98K | 54.4M | 97.1% | 16 | 2.3h |
+| **Total** | **42,543** | **207.7M** | **8.6M** | **5,339.1M** | **96.3%** | **683** | **552.3h** |
 
-_2,577.9M total tokens processed. 92.8% cache hit rate._
-
-_$11,831.19 total saved ($6,456.79 caching + $5,374.40 model routing vs all-Opus)._
-
-_Model savings are modest because ~92.8% of tokens are cache reads, where price differences between models are small._
+_5,555.5M total tokens processed. 96.3% cache hit rate._
 
 ## AI Model Usage (all time)
 
-| Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
+| Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-7 | 9,471 | 14K | 7.8M | 1,223.9M | $4,014.11 | $16,523.60 | $0.00 |
-| claude-opus-4-6 | 6,273 | 7K | 3.9M | 1,092.3M | $2,944.30 | $14,747.29 | $0.00 |
-| claude-opus-4-8 | 4,972 | 9K | 3.6M | 787.1M | $2,415.24 | $10,626.16 | $0.00 |
-| gpt-5.6-sol | 14,507 | 128.0M | 3.8M | 1,749.3M | $1,681.97 | $4,723.37 | $3,866.20 |
-| gpt-5.5 | 9,999 | 86.0M | 3.0M | 1,139.1M | $554.41 | $3,075.73 | $2,583.22 |
-| claude-sonnet-4-6 | 545 | 682 | 318K | 60.1M | $39.25 | $162.44 | $91.29 |
-| gpt-5.4 | 167 | 4.6M | 65K | 71.2M | $30.65 | $133.63 | $125.06 |
-| grok-4.5 | 237 | 3.9M | 121K | 40.8M | $26.09 | $110.35 | $103.39 |
-| gpt-5.3-codex | 289 | 3.1M | 82K | 18.5M | $20.98 | $34.75 | $61.03 |
-| claude-opus-4-5 | 39 | 81 | 28K | 1.7M | $18.07 | $23.45 | $0.00 |
-| gpt-5.6-luna | 653 | 4.2M | 133K | 79.1M | $13.34 | $213.70 | $154.08 |
-| big-pickle | 153 | 166K | 58K | 11.8M | $9.01 | $0.00 | $24.68 |
-| mimo-v2-omni-free | 90 | 661K | 51K | 8.1M | $5.81 | $21.92 | $20.78 |
-| gpt-5.6-terra | 63 | 1.1M | 14K | 3.8M | $4.29 | $10.40 | $19.70 |
-| gpt-5.3-codex-spark | 28 | 118K | 2K | 849K | $1.06 | $1.59 | $2.38 |
-| claude-haiku-4-5 | 1 | 3 | 49 | 0 | $0.06 | $0.00 | $0.00 |
-| **Total** | **47,487** | **232.2M** | **23.2M** | **6,288.4M** | **$11,778.64** | **$50,408.37** | **$7,051.79** |
+| gpt-5.6-sol | 124,291 | 751.2M | 28.9M | 15,852.4M | 95.5% | 1,145 | 1,483.9h |
+| gpt-5.5 | 10,005 | 86.4M | 3.0M | 1,139.4M | 93.0% | 218 | 68.6h |
+| claude-opus-4-7 | 9,471 | 14K | 7.8M | 1,223.9M | 100.0% | 112 | 59.6h |
+| gpt-5.6-luna | 8,677 | 74.3M | 2.2M | 984.4M | 93.0% | 273 | 135.8h |
+| gpt-5.6-terra | 8,198 | 77.9M | 2.1M | 629.5M | 89.0% | 550 | 82.4h |
+| gpt-5.3-codex-spark | 7,250 | 23.3M | 1.5M | 374.5M | 94.1% | 23 | 40.5h |
+| claude-opus-4-6 | 6,273 | 7K | 3.9M | 1,092.3M | 100.0% | 119 | 30.0h |
+| claude-opus-4-8 | 4,973 | 9K | 3.6M | 787.1M | 100.0% | 77 | 24.6h |
+| grok-4.5 | 1,529 | 10.0M | 668K | 278.9M | 96.5% | 27 | 12.2h |
+| claude-sonnet-4-6 | 545 | 682 | 318K | 60.1M | 100.0% | 28 | 1.8h |
+| gpt-6-astra | 452 | 1.6M | 98K | 54.4M | 97.1% | 16 | 2.3h |
+| gpt-5.6-terra-fast | 383 | 1.2M | 65K | 43.3M | 97.2% | 5 | 1.2h |
+| gpt-5.3-codex | 289 | 3.1M | 82K | 18.5M | 85.4% | 13 | 0.9h |
+| gpt-5.4 | 167 | 4.6M | 65K | 71.2M | 93.8% | 1 | 0.9h |
+| big-pickle | 153 | 166K | 58K | 11.8M | 98.6% | 5 | 0.4h |
+| mimo-v2-omni-free | 90 | 661K | 51K | 8.1M | 92.5% | 2 | 0.2h |
+| claude-opus-4-5 | 39 | 81 | 28K | 1.7M | 100.0% | 4 | 0.2h |
+| pool-account-management | 9 | 0 | 0 | 0 | 0.0% | 8 | 0.0h |
+| gpt-5.5-pro | 7 | 0 | 0 | 0 | 0.0% | 6 | 0.0h |
+| gpt-5.6-sol-pro | 2 | 0 | 0 | 0 | 0.0% | 2 | 0.0h |
+| claude-haiku-4-5 | 1 | 3 | 49 | 0 | 0.0% | 1 | 0.0h |
+| claude-opus-4-6-fast | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| grok-build-0.1 | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| **Total** | **182,806** | **1,035.0M** | **54.8M** | **22,632.6M** | **95.6%** | **2,472** | **1,945.4h** |
 
-_6,739.9M total tokens processed. 93.3% cache hit rate._
-
-_$57,460.16 total saved ($50,408.37 caching + $7,051.79 model routing vs all-Opus)._
-
-_Model savings are modest because ~93.3% of tokens are cache reads, where price differences between models are small._
+_23,918.3M total tokens processed. 95.6% cache hit rate._
 <!-- STATS-END -->
 
 ## Projects
@@ -88,5 +85,20 @@ _Model savings are modest because ~93.3% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-21 15:09 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-22 18:27 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
+
+<!-- TOTAL-CONTRIBUTIONS-START -->
+<div align="center">
+  <a href="https://commit-history.com/aswiler?metric=total" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/contributions/total-dark.svg" />
+      <img alt="aswiler's cumulative total GitHub contributions" src="assets/contributions/total-light.svg" width="960" />
+    </picture>
+  </a>
+</div>
+
+[Verify on commit-history.com](https://commit-history.com/aswiler?metric=total) · [Chart data](assets/contributions/total.json)
+
+Includes commits, issues, pull requests, reviews, repositories, and restricted contributions. Refreshed daily through the prior UTC day; commit-history.com may use a different refresh cutoff. GitHub controls link navigation—Ctrl/Cmd-click opens verification in a new tab.
+<!-- TOTAL-CONTRIBUTIONS-END -->
