@@ -13,7 +13,7 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | unavailable | 98.4h | 334.3h | ~1647h* |
+| Screen time (Mac) | 22h | 120.3h | 334.3h | ~1647h* |
 | Interactive human attention | 0.3h | 18.5h | 124.5h | 338.7h |
 | Interactive AI generation | 16.1h | 128.7h | 652.3h | 1249.4h |
 | Worker-classified human attention | 0.0h | 0.0h | 2.5h | 2.5h |
@@ -22,7 +22,7 @@
 | Interactive sessions | 9 | 42 | 239 | 471 |
 | Worker sessions | 51 | 361 | 1,631 | 3,527 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok, unavailable. *365-day estimate uses observed calendar coverage._
+_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
@@ -95,7 +95,7 @@ _34,872.2M total tokens processed. 95.4% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-10-14 22:30 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-10-14 23:03 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
