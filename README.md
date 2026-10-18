@@ -35,16 +35,16 @@ _AI session 365-day totals cover 211 days of local assistant session history (no
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | gpt-6.1-sol | 42,555 | 191.5M | 10.0M | 4,924.4M | 0 | 96.3% | 1,030 | 343.3h |
-| gpt-5.6-sol | 16,587 | 68.9M | 2.9M | 2,206.2M | 0 | 97.0% | 152 | 145.6h |
+| gpt-5.6-sol | 16,586 | 68.9M | 2.9M | 2,206.2M | 0 | 97.0% | 151 | 145.6h |
 | gpt-6-sol | 16,175 | 60.7M | 2.4M | 2,088.1M | 0 | 97.2% | 273 | 97.0h |
 | gpt-6-astra | 14,568 | 36.9M | 2.4M | 2,068.7M | 0 | 98.2% | 29 | 100.6h |
 | gpt-6-luna | 3,376 | 45.8M | 1.3M | 163.3M | 0 | 78.1% | 270 | 17.2h |
 | gpt-5.6-terra | 2,010 | 18.1M | 430K | 116.0M | 0 | 86.5% | 187 | 11.7h |
 | muse-spark-1.3-contributor-free | 1,758 | 8.8M | 435K | 255.3M | 0 | 96.7% | 8 | 11.0h |
-| gpt-5.6-luna | 399 | 3.9M | 60K | 47.0M | 0 | 92.2% | 35 | 11.6h |
+| gpt-5.6-luna | 398 | 3.9M | 60K | 47.0M | 0 | 92.3% | 34 | 11.6h |
 | gpt-5.5 | 20 | 232K | 4K | 3.3M | 0 | 93.6% | 1 | 0.1h |
 | grok-4.5 | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **97,449** | **435.2M** | **20.2M** | **11,872.8M** | **0** | **96.5%** | **1,843** | **737.9h** |
+| **Total** | **97,447** | **435.2M** | **20.2M** | **11,872.8M** | **0** | **96.5%** | **1,841** | **737.9h** |
 
 _12,328.3M total tokens processed. 96.5% cache hit rate._
 
@@ -95,7 +95,7 @@ _35,185.1M total tokens processed. 95.4% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-10-18 19:11 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-10-18 20:15 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
