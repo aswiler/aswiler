@@ -20,7 +20,7 @@
 | Worker/headless AI generation | 0.4h | 4.2h | 42.3h | 1964.2h |
 | Additive observed work | 16.1h | 91.7h | 538.4h | 3,114.6h |
 | Interactive sessions | 6 | 26 | 80 | 185 |
-| Worker sessions | 51 | 322 | 1,261 | 4,774 |
+| Worker sessions | 59 | 330 | 1,269 | 4,782 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -34,24 +34,24 @@ _AI session 365-day totals cover 230 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-6.1-sol | 46,994 | 206.6M | 8.8M | 5,445.5M | 0 | 96.3% | 1,282 | 493.7h |
-| gpt-6-luna | 1,709 | 27.9M | 1.1M | 76.7M | 0 | 73.3% | 178 | 5.5h |
+| gpt-6.1-sol | 46,312 | 204.4M | 8.6M | 5,363.0M | 0 | 96.3% | 1,281 | 487.6h |
+| gpt-6-luna | 1,654 | 27.4M | 1.0M | 70.3M | 0 | 71.9% | 176 | 5.4h |
 | gpt-5.6-sol | 934 | 4.5M | 195K | 132.3M | 0 | 96.7% | 2 | 6.7h |
 | gpt-5.6-luna | 276 | 2.0M | 43K | 40.8M | 0 | 95.3% | 1 | 10.3h |
-| gpt-6-astra | 214 | 545K | 41K | 30.7M | 0 | 98.3% | 10 | 4.5h |
 | gpt-6.1-terra | 88 | 362K | 10K | 6.2M | 0 | 94.5% | 1 | 0.2h |
+| gpt-6-astra | 19 | 116K | 13K | 436K | 0 | 78.9% | 9 | 0.2h |
 | gpt-5.6-terra | 11 | 54K | 900 | 463K | 0 | 89.6% | 1 | 0.0h |
 | claude-haiku-5-5 | 5 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **50,231** | **242.1M** | **10.2M** | **5,733.0M** | **0** | **95.9%** | **1,416** | **521.0h** |
+| **Total** | **49,299** | **239.1M** | **9.9M** | **5,613.9M** | **0** | **95.9%** | **1,415** | **510.5h** |
 
-_5,985.3M total tokens processed. 95.9% cache hit rate._
+_5,862.9M total tokens processed. 95.9% cache hit rate._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | gpt-5.6-sol | 133,970 | 793.2M | 30.8M | 17,248.4M | 0 | 95.6% | 1,158 | 1,552.5h |
-| gpt-6.1-sol | 67,123 | 295.7M | 14.1M | 7,753.2M | 0 | 96.3% | 1,792 | 660.6h |
+| gpt-6.1-sol | 67,166 | 296.0M | 14.1M | 7,754.3M | 0 | 96.3% | 1,800 | 660.8h |
 | gpt-6-sol | 16,175 | 60.7M | 2.4M | 2,088.1M | 0 | 97.2% | 273 | 97.0h |
 | gpt-6-astra | 14,585 | 37.0M | 2.4M | 2,068.7M | 0 | 98.2% | 45 | 100.7h |
 | gpt-5.5 | 10,025 | 86.6M | 3.0M | 1,142.8M | 0 | 93.0% | 219 | 68.7h |
@@ -79,15 +79,19 @@ _5,985.3M total tokens processed. 95.9% cache hit rate._
 | claude-haiku-4-5 | 1 | 3 | 49 | 0 | 57K | 0.0% | 1 | 0.0h |
 | claude-opus-4-6-fast | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | grok-build-0.1 | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **297,844** | **1,554.6M** | **78.4M** | **36,471.9M** | **195.9M** | **95.4%** | **4,942** | **2,917.5h** |
+| **Total** | **297,887** | **1,554.9M** | **78.4M** | **36,473.0M** | **195.9M** | **95.4%** | **4,950** | **2,917.6h** |
 
-_38,300.8M total tokens processed. 95.4% cache hit rate._
+_38,302.2M total tokens processed. 95.4% cache hit rate._
 <!-- STATS-END -->
 
+<!-- PROJECTS-START -->
 ## Projects
 
 - **[andrew-skills](https://github.com/aswiler/andrew-skills)** -- No description
+- **[state-of-ai-search-b2b-saas](https://github.com/aswiler/state-of-ai-search-b2b-saas)** -- Methods, limitations, data notes, and citation metadata for AnswerManiac's B2B SaaS AI-search study.
 - **[straw-hat-division](https://github.com/aswiler/straw-hat-division)** -- One Piece division math game in Catalan with card colection
+<!-- PROJECTS-END -->
+
 ## Connect
 
 [![GitHub](https://img.shields.io/badge/-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/aswiler)
@@ -95,7 +99,7 @@ _38,300.8M total tokens processed. 95.4% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-11-06 16:10 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-11-06 22:50 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
