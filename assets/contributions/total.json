@@ -1,10 +1,10 @@
 {
   "schema": "aidevops.total-contributions/v1",
   "user": "aswiler",
-  "updated": "2026-11-09",
-  "through": "2026-11-08",
+  "updated": "2026-11-10",
+  "through": "2026-11-09",
   "metric": "GitHub contributionCalendar.totalContributions",
-  "total": 1322,
+  "total": 1325,
   "months": [
     {
       "month": "2026-01",
@@ -58,8 +58,8 @@
     },
     {
       "month": "2026-11",
-      "total": 38,
-      "cumulative": 1322
+      "total": 41,
+      "cumulative": 1325
     }
   ]
 }
